@@ -238,5 +238,79 @@ var lastName = "Doe"
 println("My name is $firstName $lastName")
 ```
 
+# Boolean
+Either `true` or `false`
 
+# if...else
 
+```kotlin
+if (condition) {
+    // block of code
+} else if (condition) {
+    // block of code
+} else {
+    // block of code
+}
+```
+
+## if...else expressions
+```kotlin
+val time = 20
+val greeting = if (time < 18) {
+  "Good day."
+} else {
+  "Good evening."
+}
+println(greeting)
+```
+
+> When using if as an expression, you must also include else (required).
+
+> Note: You can ommit the curly braces `{}` when `if` has only one statement:
+```kotlin
+fun main() {
+  val time = 20
+  val greeting = if (time < 18) "Good day." else "Good evening."
+  println(greeting)
+}
+// This example is similar to the "ternary operator" (short hand if...else) in Java.
+```
+
+# When
+> The when expression is similar to the switch statement in Java.
+```kotlin
+val day = 4
+
+val result = when (day) {
+  1 -> "Monday"
+  2 -> "Tuesday"
+  3 -> "Wednesday"
+  4 -> "Thursday"
+  5 -> "Friday"
+  6 -> "Saturday"
+  7 -> "Sunday"
+  else -> "Invalid day."
+}
+println(result)
+
+// Outputs "Thursday" (day 4)
+```
+
+# While
+The `while` loop loops through a block of code as long as a specified condition is `true`:
+```kotlin
+// while
+while (condition) {
+  // code block to be executed
+}
+
+// do..while
+do {
+  // code block to be executed
+}
+while (condition);
+```
+
+# Break/Continue
+- The `break` statement is used to jump out of the loop
+- The `continue` statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration.
